@@ -12,4 +12,10 @@ public class LogicScript : MonoBehaviour
         score += 1;
         scoreText.text = score.ToString();
     }
+
+    public void resetScore()
+    {
+        score = 0;
+        scoreText.text = score.ToString();
+    }
 }

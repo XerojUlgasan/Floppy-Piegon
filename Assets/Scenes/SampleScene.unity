@@ -663,7 +663,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 673971f1410e9384baf952838ed6cac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LogicScript
-  score: 1
   scoreText: {fileID: 312013732}
 --- !u!4 &1433455967
 Transform:

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PassedInMiddleScript : MonoBehaviour
+public class PipeCollisionScript : MonoBehaviour
 {
     private LogicScript logic;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -8,7 +8,7 @@ public class PassedInMiddleScript : MonoBehaviour
     {
         logic = GameObject.FindGameObjectWithTag("logic").GetComponent<LogicScript>();
     }
-    
+
     // Update is called once per frame
     void Update()
     {
@@ -19,8 +19,7 @@ public class PassedInMiddleScript : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            print("Added a score!");
-            logic.addScore();
+            logic.resetScore();
         }
     }
 }
